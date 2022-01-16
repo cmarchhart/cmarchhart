@@ -1,0 +1,35 @@
+<html><head>
+
+<script src="jquery.min.js"></script>
+
+</head>
+
+<body>
+
+ 
+
+<div id="rest-web-service-client"></div>
+
+<script>
+
+$(document).ready(function() {
+
+    $.ajax({
+
+        url: "http://3.19.68.127/translator-1.0/translate",
+
+        headers: {"language":"fr", "text":"rabbit"}
+
+    }).then(function(data) {
+
+       alert(data); // will display 'lapin'
+
+    });
+
+});
+
+</script>
+
+</body>
+
+</html>
